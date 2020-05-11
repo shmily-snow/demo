@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kylin?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+
+    username: root
+    password: 123
+    # 可省略驱动配置, sprin-boot 会由url检测出驱动类型
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 60000
+mybatis:
+  mapperLocations: classpath*:/mapper/*.xml
+  typeAliasesPackage: com.example.demo.entity
+  configuration:
+    mapUnderscoreToCamelCase: true
+gk:
+  name: test
+  age: 18

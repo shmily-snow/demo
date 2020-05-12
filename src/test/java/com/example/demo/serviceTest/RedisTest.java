@@ -21,7 +21,7 @@ public class RedisTest extends SpringTestCase {
      */
     @Test
     public void set() {
-        redisUtils.set("redis_key3", "redis_vale");
+        redisUtils.set("redis_key4", "redis_vale5");
     }
 
     /**
@@ -29,7 +29,7 @@ public class RedisTest extends SpringTestCase {
      */
     @Test
     public void get() {
-        String value = redisUtils.get("redis_key3");
+        String value = redisUtils.get("redis_key4");
         System.out.println(value);
     }
 }

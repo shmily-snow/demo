@@ -88,6 +88,14 @@ public class UserController extends BaseController {
         return Result.success();
     }
 
+    /**
+     * 更新用户信息
+     * 
+     * @param user
+     * @return
+     * @author:caog
+     * @createTime:2020年5月12日 下午3:00:56
+     */
     @PostMapping("/update")
     @RequiresPermissions("sys:user:update")
     public Result update(@Validated(value = Groups.UpdateGroup.class) User user) {

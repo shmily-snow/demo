@@ -68,7 +68,7 @@ public class FileController extends BaseController {
                 }
                 os.flush();
             } catch (Exception e) {
-                LOGGER.warn("下载出错.错误信息:{}" + e.getMessage(), e);
+                LOGGER.error("下载出错.错误信息:{}" + e.getMessage(), e);
             } finally {
                 if (in != null) {
                     try {

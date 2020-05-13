@@ -6,6 +6,7 @@ import java.util.Map;
 
 import com.example.demo.comm.validator.Groups;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.hibernate.validator.constraints.NotBlank;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,6 @@ import com.example.demo.service.UserService;
 import com.example.demo.utils.BeanMap;
 import com.example.demo.utils.Query;
 import com.example.demo.web.BaseController;
-
-import javax.validation.constraints.NotBlank;
 
 @RestController
 @RequestMapping("/user")

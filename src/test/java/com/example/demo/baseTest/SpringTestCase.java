@@ -1,5 +1,6 @@
 package com.example.demo.baseTest;
 
+import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,4 +11,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringBootTest
 public abstract class SpringTestCase {
     protected Logger logger = LoggerFactory.getLogger(this.getClass());
-} 
+
+    @Before
+    public void before(){
+        logger.info("test start...");
+    }
+}
